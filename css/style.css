@@ -3,6 +3,10 @@
     padding: 0;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 .main {
     display: flex;
     height: 100vh;
@@ -69,7 +73,7 @@
     text-decoration: none;
 }
 
-.menu-item a:hover, .menu-item a.current {
+.menu-item a:hover, .menu-item a:active {
     color: white;
 }
 
@@ -197,18 +201,6 @@
     }
 }
 
-/* @media (max-width: 1100px) {
-    #skills {
-        margin-top: 50px;
-    }
-}
-
-@media (max-width: 1000px) {
-    #skills {
-        margin-top: 120px;
-    }
-} */
-
 @media (max-width: 600px) {
     .seperator-horizontal {
         display: none;
@@ -223,12 +215,23 @@
         visibility: hidden;
     }
     #content {
-        margin-left: 0;
+        margin-left: 10px;
         margin-top: 20px;
     }
+
+    .skills-text {
+        margin-top: 0;
+    }
+
+    #skills {
+        margin-left: 10px;
+    }
+
+    
     .phone-image {
         display: block;
         margin-top: 50px;
+        transform: scale(0.8);
     }
     #profile-photo-hidden {
         display: block;
