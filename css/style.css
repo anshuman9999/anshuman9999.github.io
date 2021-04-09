@@ -8,6 +8,14 @@ body {
     scroll-behavior: smooth;
 }
 
+input {
+    position: sticky;
+}
+
+.hamburger {
+    background-color: #eee;
+}
+
 .main {
     display: flex;
     height: 100vh;
@@ -87,6 +95,7 @@ body {
 #home-content {
     margin-top: 10px;
     margin-left: 30px;
+    padding-right: 10px;
     font-family: 'Raleway', sans-serif;
     font-size: 1.5rem;
     line-height: 2.7rem;
@@ -190,23 +199,23 @@ body {
 .project-boxes {
     /* border: 1px solid #333; */
     margin-top: 50px;
-    margin-left: 50px;
+    margin-left: 30px;
     width: auto;
     height: 100vh;
 }
 
-.project-box {
+/* .project-box {
     display: flex;
-    align-items: center;
     width: 80%;
     height: 40%;
+    align-items: center;
     margin-bottom: 20px;
     padding: 0 10px;
     border-radius: 20px;
     box-shadow: 2px 15px 15px -15px rgba(0,0,0,0.2);
-}
+} */
 
-.project-box-img {
+/* .project-box-img {
     margin-right: 1rem;
     flex: 1;
 }
@@ -216,9 +225,9 @@ body {
     height: 80%;
     border: 3px solid #848431;
     border-radius: 10px;
-}
+} */
 
-.project-box-heading {
+/* .project-box-heading {
     font-family: 'Raleway', sans-serif;
     font-size: 2rem;
 }
@@ -226,7 +235,6 @@ body {
 .project-box-text {
     font-family: 'Raleway', sans-serif;
     font-size: 1.1rem;
-    flex: 1;
 }
 
 .project-buttons {
@@ -246,21 +254,52 @@ body {
 
 .project-button:hover {
     background-color: #eee;
+} */
+
+.project-box {
+    margin: 20px 0;
+    border-radius: 20px;
+    box-shadow: 2px 15px 15px -15px rgba(0,0,0,0.2);
+    padding: 20px;
+    font-family: 'Raleway', sans-serif;
+}
+
+.project-box-text {
+    font-size: 1.1rem;
+}
+
+.project-box-heading {
+    font-size: 1.5rem;
+}
+
+.project-button {
+    padding: 5px 10px;
+    margin-right: 10px;
+    border: 1px solid #333;
+    outline: none;
+    border-radius: 5px;
+    background-color: white;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+@media (max-width: 1300px) {
+    #home-content {
+        font-size: 1.5rem;
+        line-height: 2.3rem;
+    }
 }
 
 @media (max-width: 1050px) {
-    #home-content {
-        font-size: 1.2rem;
-        line-height: 2.4;
-    }
 
     .skills-content {
-        font-size: 1.2rem;
-        line-height: 2.4;
+        font-size: 1.5rem;
+        line-height: 2rem;
     }
 
     .skills-text {
-        margin-top: 100px;
+        /* margin-top: 100px; */
+        padding-top: 50px;
         font-size: 1.5rem;
     }
 
@@ -272,8 +311,8 @@ body {
 
 @media (max-width: 820px) {
     #home-content {
-        font-size: 1.1rem;
-        line-height: 2.1rem;
+        font-size: 1.5rem;
+        line-height: 2rem;
     }
 
     .skills-content {
@@ -282,7 +321,19 @@ body {
     }
 }
 
+@media (max-width: 700px) {
+    #home-content {
+        font-size: 1.3rem;
+        line-height: 2rem;
+    }
+}
+
 @media (max-width: 600px) {
+
+    #home-content {
+        font-size: 1.2rem;
+    }
+
     .seperator-horizontal {
         display: none;
     }
@@ -301,13 +352,41 @@ body {
     }
 
     .skills-text {
-        margin-top: 0;
+        padding-top: 80px;
+    }
+
+    .skills-content {
+        font-size: 1rem;
+        line-height: 1.8rem;
     }
 
     #skills {
         margin-left: 10px;
     }
 
+    .projects-wrapper {
+        margin-top: 50px;
+    }
+
+    .about-me--text {
+        padding-top: 50px;
+    }
+
+    .projects-text {
+        padding-top: 50px;
+    }
+
+    .project-boxes {
+        margin-left: 0;
+    }
+
+    .project-box {
+        margin-right: 20px;
+    }
+
+    .projects-text {
+        padding-top: 20px;
+    }
     
     .phone-image {
         display: block;
@@ -379,6 +458,9 @@ body {
     .toggler:checked+.hamburger>div {
         background: inherit;
     }
+    .toggler:checked+.hamburger {
+        background: #06292d;
+    }
     .toggler:checked+.hamburger>div::before {
         top: 0;
         transform: rotate(45deg);
@@ -435,5 +517,28 @@ body {
         font-size: 1.2rem;
         z-index: 10;
         pointer-events: all;
+    }
+}
+
+@media (max-width: 500px) {
+    .about-me--text {
+        padding-top: 20px;
+    }
+
+
+    #home-content {
+        font-size: 1rem;
+        line-height: 1.7rem;
+    }
+}
+
+@media (max-width: 400px) {
+    .about-me--text {
+        padding-top: 20px;
+    }
+
+    #home-content {
+        font-size: 1.2rem;
+        line-height: 1.7rem;
     }
 }
