@@ -95,7 +95,6 @@ input {
 #home-content {
     margin-top: 10px;
     margin-left: 30px;
-    padding-right: 10px;
     font-family: 'Raleway', sans-serif;
     font-size: 1.5rem;
     line-height: 2.7rem;
@@ -283,7 +282,7 @@ input {
     cursor: pointer;
 }
 
-@media (max-width: 1300px) {
+/* @media (max-width: 1300px) {
     #home-content {
         font-size: 1.5rem;
         line-height: 2.3rem;
@@ -298,7 +297,7 @@ input {
     }
 
     .skills-text {
-        /* margin-top: 100px; */
+        
         padding-top: 50px;
         font-size: 1.5rem;
     }
@@ -326,13 +325,9 @@ input {
         font-size: 1.3rem;
         line-height: 2rem;
     }
-}
+} */
 
 @media (max-width: 600px) {
-
-    #home-content {
-        font-size: 1.2rem;
-    }
 
     .seperator-horizontal {
         display: none;
@@ -346,34 +341,37 @@ input {
     #menu {
         visibility: hidden;
     }
+
     #content {
         margin-left: 10px;
         margin-top: 20px;
     }
 
+    .about-me--text {
+        margin-top: 0;
+    }
+
+    #home-content {
+        font-size: 1.2rem;
+        line-height: 2rem;
+    }
+
     .skills-text {
-        padding-top: 80px;
+        padding: 0;
     }
 
     .skills-content {
-        font-size: 1rem;
-        line-height: 1.8rem;
-    }
-
-    #skills {
-        margin-left: 10px;
-    }
-
-    .projects-wrapper {
-        margin-top: 50px;
-    }
-
-    .about-me--text {
-        padding-top: 50px;
+        font-size: 1.2rem;
+        line-height: 2rem;
     }
 
     .projects-text {
-        padding-top: 50px;
+        margin-top: 300px;
+    }
+
+    .projects-content {
+        font-size: 1rem;
+        line-height: 2rem;
     }
 
     .project-boxes {
@@ -383,28 +381,19 @@ input {
     .project-box {
         margin-right: 20px;
     }
-
-    .projects-text {
-        padding-top: 20px;
-    }
     
     .phone-image {
         display: block;
         margin-top: 50px;
         transform: scale(0.8);
     }
+
     #profile-photo-hidden {
         display: block;
         transform: scale(1.1);
         border-radius: 50%;
     }
-    #home-content {
-        margin-top: 30px;
-        margin-left: 10px;
-    }
-    .about-me--text {
-        margin-left: 10px;
-    }
+    
     .toggler {
         /* ALWAYS KEEPING THE TOGGLER OR THE CHECKBOX ON TOP OF EVERYTHING :  */
         z-index: 10;
@@ -517,28 +506,5 @@ input {
         font-size: 1.2rem;
         z-index: 10;
         pointer-events: all;
-    }
-}
-
-@media (max-width: 500px) {
-    .about-me--text {
-        padding-top: 20px;
-    }
-
-
-    #home-content {
-        font-size: 1rem;
-        line-height: 1.7rem;
-    }
-}
-
-@media (max-width: 400px) {
-    .about-me--text {
-        padding-top: 20px;
-    }
-
-    #home-content {
-        font-size: 1.2rem;
-        line-height: 1.7rem;
     }
 }
