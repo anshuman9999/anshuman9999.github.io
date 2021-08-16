@@ -1,467 +1,472 @@
 * {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 html,
 body {
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
+  font-family: "Montserrat", sans-serif;
 }
 
 input {
-    position: sticky;
+  position: sticky;
 }
 
 .hamburger {
-    background-color: #eee;
+  background-color: #eee;
 }
 
 .main {
-    display: flex;
-    height: 100vh;
-    width: 100vw;
-    overflow-x: hidden;
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+  overflow-x: hidden;
 }
 
 .backdrop {
-    visibility: hidden;
+  visibility: hidden;
 }
 
 #menu {
-    width: 20vw;
-    height: 100%;
-    color: white;
-    background-color: #06292d;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    position: fixed;
+  width: 20vw;
+  height: 100%;
+  color: white;
+  background-color: #06292d;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  position: fixed;
 }
 
 .menu-img {
-    margin: 50px 10px;
+  margin: 50px 10px;
 }
 
 #profile-photo {
-    border-radius: 50%;
-    width: 80%;
-    height: 100%;
+  border-radius: 50%;
+  width: 80%;
+  height: 100%;
 }
 
 #content {
-    margin-left: 20vw;
-    height: 100%;
-    background-color: white;
-    position: relative;
+  margin-left: 20vw;
+  background-color: white;
+  position: relative;
 }
 
 .container {
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-    padding: 3rem 0;
+  display: flex;
+  flex-direction: column;
 }
 
 .menu-item {
-    margin-bottom: 1.5rem;
-    font-size: 1.5rem;
-    color: #348dcb;
-    cursor: pointer;
-    font-family: 'Lato', sans-serif;
-    font-weight: 400;
+  margin-bottom: 1.5rem;
+  font-size: 1.5rem;
+  color: #348dcb;
+  cursor: pointer;
+  font-weight: 400;
 }
 
 .menu-item:hover {
-    color: white;
+  color: white;
 }
 
 .menu-item a {
-    background-color: #06292d;
-    color: #348dcb;
-    border: transparent;
-    font-size: 1.5rem;
-    cursor: pointer;
-    text-decoration: none;
+  background-color: #06292d;
+  color: #348dcb;
+  border: transparent;
+  font-size: 1.2rem;
+  cursor: pointer;
+  text-decoration: none;
 }
 
-.menu-item a:hover, .menu-item a:active {
-    color: white;
+.menu-item a:hover,
+.menu-item a:active {
+  color: white;
 }
 
 #home {
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    margin-left: 2rem;
+  display: flex;
+  flex-direction: column;
+  margin-left: 2rem;
+  margin-top: 10vh;
 }
 
 #home-content {
-    margin-top: 10px;
-    font-family: 'Raleway', sans-serif;
-    font-size: 1.5rem;
-    line-height: 2.7rem;
+  font-size: 1.5rem;
+  line-height: 2.7rem;
 }
 
 .about-me--text {
-    /* margin-top: 100px; */
-    font-family: 'Raleway', sans-serif;
-    font-size: 2rem;
-    line-height: 2.7rem;
+  font-size: 2rem;
+  line-height: 2.7rem;
 }
 
 .seperator-horizontal {
-    margin-top: 10px;
-    width: 300px;
-    height: 5px;
-    /* background-color: #348dcb; */
-    background-color: #587104;
+  margin-top: 10px;
+  width: 300px;
+  height: 5px;
+  background-color: #587104;
 }
 
 .skills-text {
-    padding: 100px 0 0 0;
-    font-family: 'Raleway', sans-serif;
-    font-size: 2rem;
-    line-height: 2.7rem;
+  /* padding: 100px 0 0 0; */
+  font-size: 2rem;
+  line-height: 2.7rem;
 }
 
 .phone-image {
-    display: none;
+  display: none;
 }
 
 #profile-photo-hidden {
-    display: none;
-}
-
-#skills {
-    height: 100vh;
-    margin-left: 30px;
-    position: absolute;
-    top: 100vh;
+  display: none;
 }
 
 #social-links--div {
-    display: flex;
+  display: flex;
+}
+
+#skills {
+  margin-left: 2rem;
+  margin-top: 10vh; 
 }
 
 .skills-content {
-    margin-top: 20px;
-    margin-left: 20px;
-    font-family: 'Raleway', sans-serif;
-    font-size: 1.5rem;
-    line-height: 2.7rem;
+  margin-top: 20px;
+  font-size: 1.5rem;
+  line-height: 2.7rem;
 }
 
 .boxes {
-    margin-top: 20px;
-    margin-bottom: 20px;
+  margin-bottom: 1.2rem;
+  font-weight: 500;
 }
 
 .box {
-    display: inline-block;
-    border: 3px solid #587104;
-    width: auto;
-    height: auto;
-    padding: 10px 40px; 
-    border-radius: 20px;
-    margin-right: 20px;
-    margin-top: 10px;
+  display: inline-block;
+  border: 3px solid #587104;
+  width: auto;
+  height: auto;
+  padding: 10px 40px;
+  border-radius: 20px;
+  margin-right: 20px;
+  margin-top: 10px;
 }
 
 .social-link {
-    padding: 10px 20px;
-    font-size: 1.5rem;
-    text-align: center;
-    background-color: white;
-    outline: none;
-    /* border: 5px solid #348dcb; */
-    border: 5px solid #587104;
-    border-radius: 10px;
-    cursor: pointer;
-    margin-right: 20px;
+  padding: 10px 20px;
+  font-size: 1.5rem;
+  text-align: center;
+  background-color: white;
+  outline: none;
+  border: 5px solid #587104;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-right: 20px;
 }
 
-
+#experience {
+  display: flex;
+  margin-left: 2rem;
+  margin-top: 10vh;
+}
 #projects {
-    height: 100vh;
-    display: flex;
-    margin-left: 30px;
-    position: absolute;
-    top: 200vh;
-}
-
-.projects-wrapper {
-    height: 100%;
+  display: flex;
+  margin-left: 2rem;
+  margin-top: 10vh;
 }
 
 .projects-text {
-    margin-top: 20px;
-    font-family: 'Raleway', sans-serif;
-    font-size: 2rem;
-    line-height: 2.7rem;
+  margin-top: 20px;
+  font-size: 2rem;
+  line-height: 2.7rem;
+}
+
+.projects-content {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
 }
 
 .project-boxes {
-    /* border: 1px solid #333; */
-    margin-top: 50px;
-    margin-left: 30px;
-    width: auto;
-    height: 100vh;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  width: auto;
 }
 
 .project-box {
-    margin: 20px 0;
-    border-radius: 20px;
-    box-shadow: 2px 15px 15px -15px rgba(0,0,0,0.2);
-    padding: 20px;
-    font-family: 'Raleway', sans-serif;
+  border-radius: 20px;
+  box-shadow: 2px 15px 15px rgba(0, 0, 0, 0.2);
+  padding: 1rem;
+  margin-right: 1rem;
 }
 
 .project-box-text {
-    font-size: 1.1rem;
+  font-size: 1.1rem;
 }
 
 .project-box-heading {
-    font-size: 1.5rem;
+  font-size: 1.5rem;
 }
 
 .project-button {
-    padding: 5px 10px;
-    margin-right: 10px;
-    border: 1px solid #333;
-    outline: none;
-    border-radius: 5px;
-    background-color: white;
-    font-size: 1rem;
-    cursor: pointer;
+  padding: 5px 10px;
+  margin-right: 10px;
+  border: 2px solid #333;
+  outline: none;
+  border-radius: 10px;
+  background-color: white;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
 }
 
 .project-button:hover {
-    background: #efefef;
+  background: #efefef;
 }
 
 .project-button a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 .project-button a:visited {
-    color: #333;
-    text-decoration: none;
+  color: #333;
+  text-decoration: none;
+}
+
+.experience-list {
+  padding-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding-bottom: 1rem;
+}
+
+.experience-list > li {
+  list-style: none;
+}
+
+.experience-heading {
+  display: flex;
+  justify-content: space-between;
 }
 
 @media (max-width: 600px) {
+  .seperator-horizontal {
+    display: none;
+  }
+  .main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+  }
+  #menu {
+    visibility: hidden;
+  }
 
-    .seperator-horizontal {
-        display: none;
-    }
-    .main {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        position: relative;
-    }
-    #menu {
-        visibility: hidden;
-    }
+  #content {
+    margin-left: 16px;
+    margin-right: 16px;
+    margin-top: 0;
+  }
 
-    #content {
-        margin-left: 10px;
-        margin-top: 0;
-    }
+  .about-me--text {
+    margin-top: 0;
+    margin-left: 10px;
+    display: none;
+  }
 
-    .about-me--text {
-        margin-top: 0;
-        margin-left: 10px;
-        display: none;
-    }
+  #home {
+    margin-top: 0;
+    margin-left: 0;
 
-    #home {
-        height: 60vh;
-        margin-left: 0;
-        padding-top: 10vh;
-    }
+  }
+  .container {
+    padding: 0;
+  }
 
-    .container {
-        padding: 0;
-    }
+  #home-content {
+    font-size: 1rem;
+    line-height: 2rem;
+    margin-left: 10px;
+    margin-top: 0;
+  }
 
-    #home-content {
-        font-size: 1rem;
-        line-height: 2rem;
-        margin-left: 10px;
-        margin-top: 0;
-    }
+  .skills-text {
+    padding: 0;
+  }
 
-    .skills-text {
-        padding: 0;
-    }
+  .skills-content {
+    font-size: 1rem;
+    line-height: 2rem;
+  }
 
-    .box {
-        padding: 10px 20px;
-    }
+  #skills {
+    margin-top: 10vh;
+    margin-left: 0;
+  }
 
-    .skills-content {
-        font-size: 1rem;
-        line-height: 2rem;
-        margin-left: 10px;
-    }
+  #experience {
+    margin-top: 10vh;
+    margin-left: 0;
+  }
 
-    #skills {
-        /* margin-top: 20px; */
-        margin-left: 10px;
-        padding-top: 10vh;
-    }
+  #projects {
+    margin-top: 10vh;
+    margin-left: 0;
+  }
 
-    #projects {
-        margin-left: 10px;
-        padding-top: 10vh;
-    }
+  .projects-text {
+    margin-top: 0;
+  }
 
-    .projects-text {
-        margin-top: 0;
-    }
+  .projects-content {
+    font-size: 1rem;
+    line-height: 1.5;
+  }
 
-    .projects-content {
-        font-size: 1rem;
-        line-height: 2rem;
-    }
+  .project-box {
+    padding-right: 10px;
+    margin-right: 0;
+  }
 
-    .project-boxes {
-        margin-left: 0;
-    }
+  .experience-heading {
+    display: flex;
+    flex-direction: column;
+  }
 
-    .project-box {
-        margin-right: 20px;
-    }
-    
-    .phone-image {
-        display: block;
-        /* margin-top: 50px; */
-        transform: scale(0.8);
-        padding: 20px 0;
-        height: 40vh;
-    }
+  .phone-image {
+    display: block;
+    transform: scale(0.8);
+    padding: 20px 0;
+    height: 40vh;
+  }
 
-    .phone-image img {
-        height: 40vh;
-    }
+  .phone-image img {
+    height: 40vh;
+  }
 
-    #profile-photo-hidden {
-        display: block;
-        transform: scale(1.1);
-        border-radius: 50%;
-    }
-    
-    .toggler {
-        /* ALWAYS KEEPING THE TOGGLER OR THE CHECKBOX ON TOP OF EVERYTHING :  */
-        z-index: 10;
-        height: 50px;
-        width: 50px;
-        position: fixed;
-        top: 0;
-        left: 0;
-        cursor: pointer;
-        opacity: 0;
-    }
-    .hamburger {
-        position: fixed;
-        top: 0;
-        left: 0;
-        height: 40px;
-        width: 40px;
-        padding: 0.6rem;
-        /* FOR DISPLAYING EVERY ELEMENT IN THE CENTER : */
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        cursor: pointer;
-        z-index: 1;
-    }
-    /* CREATING THE MIDDLE LINE OF THE HAMBURGER : */
-    .hamburger>div {
-        position: relative;
-        top: 0;
-        left: 0;
-        background: black;
-        height: 2px;
-        width: 60%;
-        transition: all 0.4s ease;
-    }
-    /* CREATING THE TOP AND BOTTOM LINES : 
+  #profile-photo-hidden {
+    display: block;
+    transform: scale(1.1);
+    border-radius: 50%;
+  }
+
+  .toggler {
+    /* ALWAYS KEEPING THE TOGGLER OR THE CHECKBOX ON TOP OF EVERYTHING :  */
+    z-index: 10;
+    height: 50px;
+    width: 50px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    cursor: pointer;
+    opacity: 0;
+  }
+  .hamburger {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 40px;
+    width: 40px;
+    padding: 0.6rem;
+    /* FOR DISPLAYING EVERY ELEMENT IN THE CENTER : */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    z-index: 1;
+  }
+  /* CREATING THE MIDDLE LINE OF THE HAMBURGER : */
+  .hamburger > div {
+    position: relative;
+    top: 0;
+    left: 0;
+    background: black;
+    height: 2px;
+    width: 60%;
+    transition: all 0.4s ease;
+  }
+  /* CREATING THE TOP AND BOTTOM LINES : 
     TOP AT -10PX ABOVE THE MIDDLE ONE AND BOTTOM ONE IS 10PX BELOW THE MIDDLE: */
-    .hamburger>div::before, .hamburger>div::after {
-        content: '';
-        position: absolute;
-        top: -10px;
-        background: black;
-        width: 100%;
-        height: 2px;
-        transition: all 0.4s ease;
-    }
-    .hamburger>div::after {
-        top: 10px;
-    }
-    /* IF THE TOGGLER IS IN ITS CHECKED STATE, THEN SETTING THE BACKGROUND OF THE MIDDLE LAYER TO COMPLETE BLACK AND OPAQUE :  */
-    .toggler:checked+.hamburger>div {
-        background: inherit;
-    }
-    .toggler:checked+.hamburger {
-        background: #06292d;
-    }
-    .toggler:checked+.hamburger>div::before {
-        top: 0;
-        transform: rotate(45deg);
-        background: white;
-        z-index: 20;
-    }
-    /* AND ROTATING THE TOP AND BOTTOM LINES :  */
-    .toggler:checked+.hamburger>div::after {
-        top: 0;
-        transform: rotate(135deg);
-        background: white;
-        z-index: 20;
-    }
-    .toggler:checked~#content {
-        z-index: -2;
-    }
-    .toggler:checked~.phone-image {
-        z-index: -2;
-    }
-    .toggler:checked~#menu {
-        transition: all 0.2s ease;
-        display: block;
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 40%;
-        z-index: 0;
-        visibility: visible;
-    }
-    .toggler:checked~#menu>.menu-img {
-        display: none;
-    }
-    .toggler:checked~#menu>.menu-items {
-        transition: visibility 0.4s ease;
-        transition-delay: 0.2s;
-        margin-top: 80px;
-        text-align: left;
-        margin-left: 30px;
-        pointer-events: all;
-    }
-    .toggler:checked~.backdrop {
-        visibility: visible;
-        transition: all 0.2s;
-        transition-delay: 0.1s;
-        width: 60%;
-        height: 100%;
-        position: fixed;
-        z-index: 100;
-        top: 0%;
-        left: 40%;
-        background-color: rgba(0, 0, 0, 0.7);
-    }
-    .toggler:checked~#menu>.menu-item {
-        font-size: 1.2rem;
-        z-index: 10;
-        pointer-events: all;
-    }
+  .hamburger > div::before,
+  .hamburger > div::after {
+    content: "";
+    position: absolute;
+    top: -10px;
+    background: black;
+    width: 100%;
+    height: 2px;
+    transition: all 0.4s ease;
+  }
+  .hamburger > div::after {
+    top: 10px;
+  }
+  /* IF THE TOGGLER IS IN ITS CHECKED STATE, THEN SETTING THE BACKGROUND OF THE MIDDLE LAYER TO COMPLETE BLACK AND OPAQUE :  */
+  .toggler:checked + .hamburger > div {
+    background: inherit;
+  }
+  .toggler:checked + .hamburger {
+    background: #06292d;
+  }
+  .toggler:checked + .hamburger > div::before {
+    top: 0;
+    transform: rotate(45deg);
+    background: white;
+    z-index: 20;
+  }
+  /* AND ROTATING THE TOP AND BOTTOM LINES :  */
+  .toggler:checked + .hamburger > div::after {
+    top: 0;
+    transform: rotate(135deg);
+    background: white;
+    z-index: 20;
+  }
+  .toggler:checked ~ #content {
+    z-index: -2;
+  }
+  .toggler:checked ~ .phone-image {
+    z-index: -2;
+  }
+  .toggler:checked ~ #menu {
+    transition: all 0.2s ease;
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 40%;
+    z-index: 0;
+    visibility: visible;
+  }
+  .toggler:checked ~ #menu > .menu-img {
+    display: none;
+  }
+  .toggler:checked ~ #menu > .menu-items {
+    transition: visibility 0.4s ease;
+    transition-delay: 0.2s;
+    margin-top: 80px;
+    text-align: left;
+    margin-left: 30px;
+    pointer-events: all;
+  }
+  .toggler:checked ~ .backdrop {
+    visibility: visible;
+    transition: all 0.2s;
+    transition-delay: 0.1s;
+    width: 60%;
+    height: 100%;
+    position: fixed;
+    z-index: 100;
+    top: 0%;
+    left: 40%;
+    background-color: rgba(0, 0, 0, 0.7);
+  }
+  .toggler:checked ~ #menu > .menu-item {
+    font-size: 1.2rem;
+    z-index: 10;
+    pointer-events: all;
+  }
 }
