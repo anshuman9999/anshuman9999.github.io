@@ -130,7 +130,7 @@ input {
 
 #skills {
   margin-left: 2rem;
-  margin-top: 10vh; 
+  margin-top: 10vh;
 }
 
 .skills-content {
@@ -142,6 +142,9 @@ input {
 .boxes {
   margin-bottom: 1.2rem;
   font-weight: 500;
+  display: flex;
+  flex-wrap: wrap;
+  flex: 0 0 33%;
 }
 
 .box {
@@ -254,6 +257,9 @@ input {
 }
 
 @media (max-width: 600px) {
+  .boxes {
+    flex-basis: 50%;
+  }
   .seperator-horizontal {
     display: none;
   }
@@ -282,7 +288,6 @@ input {
   #home {
     margin-top: 0;
     margin-left: 0;
-
   }
   .container {
     padding: 0;
